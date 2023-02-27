@@ -6,19 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/checkbox.css">
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    
 </head>
 <body>
     
     <nav id="navBar">
-        <span class="nav-bar-items"><a href="">Home</a></span>
-        <span class="nav-bar-items"><a href="">About</a></span>
-        <span class="nav-bar-items"><a href="">Services</a></span>
-        <span class="nav-bar-items"><a href="">Contact</a></span>
-        <span class="nav-bar-items" id="login-button"><a href="">Login</a></span>
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Services</a>
+        <a href="" class="nav-link">Contact</a>
+        <button class="nav-link-login" id="MeuBotao">Login</button>
     </nav>
-
+    <main id="Registrar">
+        <h1 id="login-title">Registrar</h1> 
+        <button id="close-window"><ion-icon id="X" name="close-outline"></ion-icon></button>
+        <div id="register-info">
+            <div id="usn">
+                <label for="user"><p class="info-desc">Username</p></label>
+                <input type="text" name="user" id="user" class="informations"><ion-icon name="person-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+            <div id="em">
+                <label for="email"><p class="info-desc">Email</p></label>
+                <input type="email" name="email" id="email" class="informations"><ion-icon name="mail-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+            <div id="pass">
+                <label for="password"><p class="info-desc">Password</p></label>
+                <input type="password" name="password" id="password" class="informations"><ion-icon name="lock-closed-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+        
+            <div id="second-section">
+                <label class="container"> I agree to the terms & conditions
+                    <input type="checkbox">
+                    <span class="check"></span>
+                </label>
+                <button id="register-button">Register</button>
+                <div id="footer">
+                    <p>Já tem uma conta? <a href="" id="footer-a">Login</a></p>
+                </div>
+            </div>
+    </div>
+    </main>
 
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
