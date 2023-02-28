@@ -1,14 +1,19 @@
+const divContainer = document.querySelector("#Registrar")
 
-const MeuBotao = document.getElementById("#MeuBotao")
-const Registrar = document.getElementById("#Registrar")
+let isClicked = true
 
-MeuBotao.addEventListener("click", () => {
-    if (Registrar.style.display == "none"){
-            Registrar.style.display = "block"
-        } else {
-            Registrar.style.display = "none"
-        }
-})
+let showOrHide = function(){
+    if(isClicked){
+        
+        isClicked = false
+        divContainer.style.opacity = "1"
+    } else {
+        
+        divContainer.style.opacity = "0"
+        isClicked = true
+    }
+}
+
 
 
     

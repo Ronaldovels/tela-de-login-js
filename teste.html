@@ -5,24 +5,318 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Typcical Device Breakpoints
+---------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: rebeccapurple;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+
+.nav-link, .nav-link-login {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: .5s;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+   
+}
+
+.nav-link-login {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.nav-link-login:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+#Login {
+    border: 2px solid white;
+    box-shadow: 2px 2px 10px 3px #142424;
+    border-radius: 15px;
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    margin-top: 80px;
+    transition: .7s;
+    opacity: 1;
+    backdrop-filter: blur(20px);
+        
+}
+
+#login-title {
+    margin-left: 147px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+#close-window {
+    border: none;
+    background-color: #142424;
+    color: white;
+    margin-left: 104px;
+    height: 60px;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 23px;
+}
+
+ion-icon#X {
+    width: 50%;
+    height: 50%;
+}
+
+#login-info {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-desc {
+    color: #142424;
+    text-align: start;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.informations {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    width: 280px;
+}
+
+#usn, #em {
+    margin-bottom: 10px;
+
+}
+
+#user-line {
+    margin-bottom: 34px;
+}
+
+#second-section {
+    
+}
+
+#forgot-pass {
+    position: relative;
+    margin-left: 4px;
+    left: 49px;
+    font-size: 15px;
+    color: #142424;
+    font-weight: bolder;
+}
+
+#remember {
+    margin-left: -24px;
+}
+
+#checkbox {
+    margin-right: 7px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+#checkbox:checked {
+    background-color: #142424;
+    color: white;
+    
+}
+
+
+#login-button {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border: none;
+    background-color: #142424;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 7px;
+}
+
+#footer {
+    margin-top: 30px;
+    color: #314646;
+}
+
+#footer-a {
+    color: #303b3b;
+    
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 10px;
+    transition: 0.34s;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.34s;
+}
+
+.check {
+    left: 2px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    position: absolute;
+    transition: 0.34s;
+    border: 1px solid #142424;
+}
+
+.container input:checked ~ .check {
+    background-color: #142424;
+    transition: 0.34s;
+}
+
+.container .check::after {
+    top: 1px;
+    left: 4.68px;
+    width: 3px;
+    height: 9px;
+    border:  solid white;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.34s;
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    display: none;
+    transition: 0.34s;
+}
+
+.container input:checked ~ .check::after {
+    display: block;
+    transition: 0.34s;
+}
+
+
+
+
+    </style>
 </head>
 <body>
-    <label class="container"> HTML
-        <input type="checkbox">
-        <span class="check"></span>
-    </label>
-    <label class="container"> CSS
-        <input type="checkbox">
-        <span class="check"></span>
-    </label>
-    <label class="container"> JavaScript
-        <input type="checkbox">
-        <span class="check"></span>
-    </label>
-    <label class="container"> Visual Studio
-        <input type="checkbox">
-        <span class="check"></span>
-    </label>
+    
+    <nav id="navBar">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Services</a>
+        <a href="" class="nav-link">Contact</a>
+        <button onclick="showOrHide()" class="nav-link-login" id="MeuBotao">Login</button>
+    </nav>
+    <main id="Login">
+        <h1 id="login-title">Login</h1> 
+        <button id="close-window"><ion-icon id="X" name="close-outline"></ion-icon></button>
+        <div id="login-info">
+            <div id="usn">
+                <label for="userOrMail"><p class="info-desc">Username or Email</p></label>
+                <input type="text" name="userOrMail" id="userOrMail" class="informations"><ion-icon name="person-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+            
+            <div id="pass">
+                <label for="password"><p class="info-desc">Password</p></label>
+                <input type="password" name="password" id="password" class="informations"><ion-icon name="lock-closed-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+        
+            <div id="second-section">
+                <label class="container"> <span id="remember">Remember me</span>
+                    <a href="" id="forgot-pass">Forgot Password?</a>
+                    <input type="checkbox">
+                    <span class="check"></span>
+                </label>
+                <button id="login-button">Login</button>
+                <div id="footer">
+                    <p>Não tem uma conta? <a href="" id="footer-a">Registre-se</a></p>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+            const divContainer = document.querySelector("#Login")
+
+    let isClicked = true
+
+    let showOrHide = function(){
+        if(isClicked){
+            
+            isClicked = false
+            divContainer.style.opacity = "1"
+        } else {
+            
+            divContainer.style.opacity = "0"
+            isClicked = true
+        }
+    }   
+    </script>
 </body>
 </html>
