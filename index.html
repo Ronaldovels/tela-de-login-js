@@ -19,9 +19,38 @@
         <a href="" class="nav-link">Contact</a>
         <button onclick="showOrHide()" class="nav-link-login" id="MeuBotao">Login</button>
     </nav>
+    <main id="Login">
+        <h1 id="login-title">Login</h1> 
+        <button onclick="closeWindow()" id="close-window-login"><ion-icon id="X" name="close-outline"></ion-icon></button>
+        <div id="login-info">
+            <div id="usn-login">
+                <label for="userOrMail"><p class="info-desc">Username or Email</p></label>
+                <input type="text" name="userOrMail" id="userOrMail" class="informations"><ion-icon name="person-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+            
+            <div id="pass-login">
+                <label for="password-login"><p class="info-desc">Password</p></label>
+                <input type="password-login" name="password-login" id="password-login" class="informations"><ion-icon name="lock-closed-outline"></ion-icon><br>
+                <hr size="2" width="100%" align="left" color="#142424;" id="user-line">
+            </div>
+        
+            <div id="second-section-login">
+                <label class="container-login"> <span id="remember">Remember me</span>
+                    <a href="" id="forgot-pass">Forgot Password?</a>
+                    <input type="checkbox">
+                    <span class="check-login"></span>
+                </label>
+                <button id="login-button">Login</button>
+                <div id="footer-login">
+                    <p>Não tem uma conta? <button onclick="showOrHide2()" id="footer-a-login">Registre-se</button>
+                </div>
+            </div>
+    </div>
+    </main>
     <main id="Registrar">
         <h1 id="register-title">Registrar</h1> 
-        <button id="close-window"><ion-icon id="X" name="close-outline"></ion-icon></button>
+        <button onclick="closeWindow()" id="close-window"><ion-icon id="X" name="close-outline"></ion-icon></button>
         <div id="register-info">
             <div id="usn">
                 <label for="user"><p class="info-desc">Username</p></label>
@@ -46,7 +75,7 @@
                 </label>
                 <button id="register-button">Register</button>
                 <div id="footer">
-                    <p>Já tem uma conta? <a href="" id="footer-a">Login</a></p>
+                    <p>Já tem uma conta? <button onclick="showOrHide3()" id="footer-a">Login</button>
                 </div>
             </div>
     </div>

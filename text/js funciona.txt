@@ -24,7 +24,6 @@ let showOrHide2 = function(){
         
         isClicked2 = false
         divContainer.style.display = "none"
-        divContainer2.style.opacity = "1"
         divContainer2.style.display = "block"
     } else {
         
@@ -40,7 +39,6 @@ let showOrHide3 = function(){
     if(isClicked3){
         
         isClicked2 = false
-        divContainer.style.opacity = "1"
         divContainer.style.display = "block"
         divContainer2.style.display = "none"
     } else {
@@ -50,10 +48,8 @@ let showOrHide3 = function(){
     }
 }
 
-let closeWindow = function(){
-    
-        divContainer.style.opacity = "0"
-        divContainer2.style.opacity = "0"
-       
-    
-}
+
+
+
+
+

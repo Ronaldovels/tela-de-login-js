@@ -22,9 +22,7 @@ body, html {
     width: 100vw;
     background-image: url(https://wallpapers.com/images/hd/4k-firewatch-silhouettes-against-purple-mountains-bs9gjt6ykqvx2gym.jpg);
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 nav {
@@ -73,8 +71,7 @@ nav {
     margin: auto;
     margin-top: 80px;
     transition: 0.7s;
-    display: block;
-    opacity: 0;
+    display: none;
     backdrop-filter: blur(20px);
         
 }
@@ -211,8 +208,8 @@ nav {
     margin: auto;
     margin-top: 80px;
     transition: .7s;
-    backdrop-filter: blur(20px);
     opacity: 0;
+    backdrop-filter: blur(20px);
         
 }
 

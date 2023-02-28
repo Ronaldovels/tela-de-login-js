@@ -63,3 +63,62 @@
     display: block;
     transition: 0.34s;
 }
+
+.container-login {
+    display: block;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 10px;
+    transition: 0.34s;
+}
+
+.container-login input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.34s;
+}
+
+.check-login {
+    left: 2px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    position: absolute;
+    transition: 0.34s;
+    border: 1px solid #142424;
+}
+
+.container-login input:checked ~ .check-login {
+    background-color: #142424;
+    transition: 0.34s;
+}
+
+.container-login .check-login::after {
+    top: 1px;
+    left: 4.68px;
+    width: 3px;
+    height: 9px;
+    border:  solid white;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.34s;
+}
+
+.check-login::after {
+    content: "";
+    position: absolute;
+    display: none;
+    transition: 0.34s;
+}
+
+.container-login input:checked ~ .check::after {
+    display: block;
+    transition: 0.34s;
+}
