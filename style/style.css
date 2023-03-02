@@ -19,7 +19,7 @@ Grandes telas: Acima de 1200px
 body, html {
     height: 100vh;
     width: 100vw;
-    
+    background-image: url(../media/firewatch-japan.png);
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-y: hidden;
@@ -312,7 +312,7 @@ ion-icon#X {
     body, html {
         height: 100vh;
         width: 100vw;
-        
+        background-image: url(../media/firewatch-japan.png);
         background-size: cover;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         overflow-y: hidden;
